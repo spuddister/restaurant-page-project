@@ -4,8 +4,6 @@ export default function home() {
     const element = document.createElement('div');
     const title = document.createElement('h1');
     const img = new Image();
-    const description = document.createElement('p');
-    const moto = document.createElement('p');
 
     title.innerText = 'Bueno Nacho';
     img.src = Icon;
@@ -15,10 +13,9 @@ export default function home() {
 
     element.appendChild(title);
     element.appendChild(img);
-    element.appendChild(description);
-    element.appendChild(moto);
 
-    console.log('home')
+
+    console.log('about')
 
     return element;
   }
