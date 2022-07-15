@@ -1,4 +1,6 @@
 import home from './home';
+import menu from './menu';
+import about from './about';
 import './style.css';
 
 let page = 'home';
@@ -17,7 +19,16 @@ function clearPage(){
 }
 
 function render(page) {
-    //reder specific page
+    if (page === 'home'){
+        console.log('home')
+        content.appendChild(home());
+    } else if (page === 'menu') {
+        console.log('menu')
+        content.appendChild(menu());
+    } else {
+        console.log('about')
+        content.appendChild(about());
+    }
 }
   
 content.appendChild(home());

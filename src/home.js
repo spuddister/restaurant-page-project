@@ -13,12 +13,10 @@ export default function home() {
     description.innerText = 'Store #582 serves as a popular hangout spot for Middleton High School students, especially Kim Possible and Ron Stoppable. It features a standard store design, including the signature Sombrero-shaped roof, and is both managed and staffed most frequently by Ned.'
     moto.innerText ='So warm, so comfortable... so Bueno.'
 
-    element.appendChild(title);
+    element.appendChild(moto);
     element.appendChild(img);
     element.appendChild(description);
-    element.appendChild(moto);
-
-    console.log('home')
+    
 
     return element;
   }
