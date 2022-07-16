@@ -3,26 +3,34 @@ import menu from './menu';
 import about from './about';
 import './style.css';
 
-let page = 'home';
-const content = document.getElementById('content');
+let page = '1';
+const content = document.getElementById('content-wrapper');
 const nav = [...document.getElementsByClassName('nav-list-item')];
 nav.forEach(menuItem => {
     menuItem.addEventListener('click', (e)=>{
-        page = e.target.innerText.toLowerCase();
-        clearPage();
+        navItemClassChange(e.target);
+        page = e.target.getAttribute('index');
+        clearPageContent();
         render(page);
     })
 });
 
-function clearPage(){
+function navItemClassChange (target) {
+    nav.forEach(menuItem => {
+        menuItem.classList.remove('selected');
+    });
+    target.classList.add('selected');
+}
+
+function clearPageContent(){
     content.innerHTML = '';
 }
 
 function render(page) {
-    if (page === 'home'){
+    if (page === '1'){
         console.log('home')
         content.appendChild(home());
-    } else if (page === 'menu') {
+    } else if (page === '2') {
         console.log('menu')
         content.appendChild(menu());
     } else {
