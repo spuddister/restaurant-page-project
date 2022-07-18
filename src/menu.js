@@ -1,21 +1,85 @@
-import Icon from './img/bueno.png'
+import BurritoPic from './img/burrito.jpg';
+import NachosPic from './img/nachos.jpg';
+import QuesadillaPic from './img/quesadilla.jpg';
+import TacoPic from './img/taco.jpg';
+import SodaPic from './img/soda.jpg';
 
-export default function home() {
-    const element = document.createElement('div');
-    const title = document.createElement('h1');
-    const img = new Image();
-    const description = document.createElement('p');
+const menuOptions = [
+  {
+    item: 'Burrito',
+    photo: BurritoPic,
+    description: 'A soft flour tortilla rolled up with with beans, cheese, veggies, and guacamole.',
+    price: '$6.99'
+  },
+  {
+    item: 'Taco',
+    photo: TacoPic,
+    description: 'A crunchy corn taco shell or soft flour tortilla filled with seasoned ground beef, crisp shredded lettuce and real cheddar cheese.',
+    price: '$2.99'
+  },
+  {
+    item: 'Nachos',
+    photo: NachosPic,
+    description: "Seasoned ground beef, beans, nacho cheese sauce, a three-cheese blend, diced tomatoes, sour cream and guac atop a big plate of crunchy nacho chips.",
+    price: '$8.99'
+  },
+  {
+    item: 'Quesadilla',
+    photo: QuesadillaPic,
+    description: 'A crunchy corn taco shell or soft flour tortilla filled with seasoned ground beef, crisp shredded lettuce and real cheddar cheese.',
+    price: '$4.99'
+  },
+  {
+    item: 'Soda',
+    photo: SodaPic,
+    description: 'Your choice of soda from our ultimate carbonating soda machine.',
+    price: '$1.99'
+  },
+]
 
+export default function menu() {
+  const element = document.createElement('div');
+  const title = document.createElement('h1');
+  const menuDiv = menuElement();
 
-    title.innerText = 'Bueno Nacho';
-    img.src = Icon;
-    img.alt = 'Bueno Nacho Restaurant';
-    description.innerText = 'Store #582 serves as a popular hangout spot for Middleton High School students, especially Kim Possible and Ron Stoppable. It features a standard store design, including the signature Sombrero-shaped roof, and is both managed and staffed most frequently by Ned.'
+  element.id = 'content';
+  title.innerText = 'Menu';
+  
+  element.appendChild(title);
+  element.appendChild(menuDiv);
 
+  return element;
+}
 
-    element.appendChild(title);
-    element.appendChild(img);
-    element.appendChild(description);
+function menuElement() {
+  const element = document.createElement('div');
+  
+  menuOptions.forEach(option => {
+      
+    const card = document.createElement('div');
+    const cardContent = document.createElement('div');
+    const itemName = document.createElement('p');
+    const itemPhoto = new Image();
+    const itemDescription = document.createElement('p');
+    const itemPrice = document.createElement('p');
 
-    return element;
-  }
+    card.classList.add('menu-item');
+    cardContent.classList.add('menu-item-text')
+    itemName.innerText = option.item;
+    itemName.classList.add('bold');
+    itemPhoto.src = option.photo;
+    itemPhoto.alt = option.item;
+    itemDescription.innerText = option.description;
+    itemPrice.innerText = option.price;
+
+    card.appendChild(itemPhoto);
+    cardContent.appendChild(itemName);
+    cardContent.appendChild(itemDescription);
+    cardContent.appendChild(itemPrice);
+    card.appendChild(cardContent);
+
+    element.appendChild(card);
+  });
+
+  return element;
+}

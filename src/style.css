@@ -14,7 +14,8 @@ body {
     padding: 5px 20px 10px 20px;
     margin-top: 10px; 
     font-size: 22px;
-    width: 51px;
+    width: 70px;
+    text-align: center;
 }
 
 .nav-list-item:hover:not(.selected) {
@@ -25,8 +26,8 @@ body {
 .nav-list-item.selected {
     background-color: #d9614c;
     font-weight: 900;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 a {
@@ -39,10 +40,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: blanchedalmond;
+    padding: 0 20px;
 }
 nav ul {
     margin: 0;
-    padding: 0 20px;
 }
 
 nav h1 {
@@ -66,7 +67,7 @@ nav h1 {
     justify-content: center;
     background-color: blanchedalmond;
 }
-#content img {
+img {
     max-width: 60vw;
     justify-content: center;
     border-radius: 30px;
@@ -74,4 +75,38 @@ nav h1 {
 
 #content h1 {
     margin: 0;
+}
+
+.menu-item {
+    margin: 20px 0;
+    padding: 10px;
+    border: 3px solid brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item>img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 20px;
+}
+
+.menu-item .bold{
+    font-weight: 900;
+}
+
+.menu-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item-text>p {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item-text>p:nth-child(3) {
+    margin-top: 10px;
 }

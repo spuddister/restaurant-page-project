@@ -1,6 +1,6 @@
 import home from './home';
 import menu from './menu';
-import about from './about';
+import contact from './contact';
 import './style.css';
 
 let page = '1';
@@ -16,8 +16,8 @@ nav.forEach(menuItem => {
 });
 
 function navItemClassChange (target) {
-    nav.forEach(menuItem => {
-        menuItem.classList.remove('selected');
+    nav.forEach(navItem => {
+        navItem.classList.remove('selected');
     });
     target.classList.add('selected');
 }
@@ -35,7 +35,7 @@ function render(page) {
         content.appendChild(menu());
     } else {
         console.log('about')
-        content.appendChild(about());
+        content.appendChild(contact());
     }
 }
   
