@@ -28,13 +28,10 @@ function clearPageContent(){
 
 function render(page) {
     if (page === '1'){
-        console.log('home')
         content.appendChild(home());
     } else if (page === '2') {
-        console.log('menu')
         content.appendChild(menu());
     } else {
-        console.log('about')
         content.appendChild(contact());
     }
 }
