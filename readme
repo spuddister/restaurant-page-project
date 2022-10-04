@@ -1,3 +1,18 @@
+# Restaurant Page Project
+
+For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum, I built a simple restaurant page while implementing Webpack and ES6 Modules. These pages were dynamically rendered using Javascript.
+
+### New Skills
+- Javascript dynamic rendering
+- Webpack
+  
+#
+[See deployment here.](https://spuddister.github.io/restaurant-page-project/)
+#
+
+### Photo Credits
+
+
 Quesadilla - Photo by <a href="https://unsplash.com/@lottiegriffiths?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lottie Griffiths</a> on <a href="https://unsplash.com/s/photos/quesadilla?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Burrito - Photo by <a href="https://unsplash.com/es/@likemeat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">LikeMeat</a> on <a href="https://unsplash.com/s/photos/burrito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
