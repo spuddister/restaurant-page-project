@@ -1,6 +1,6 @@
 # Restaurant Page Project
 
-For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum, I built a simple restaurant page while implementing Webpack and ES6 Modules. These pages were dynamically rendered using Javascript.
+For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum, I built a simple tabular restaurant page while implementing Webpack and ES6 Modules. These pages were dynamically rendered using Javascript.
 
 ### New Skills
 - Javascript dynamic rendering
