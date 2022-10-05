@@ -2,9 +2,13 @@
 
 For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum, I built a simple tabular restaurant page while implementing Webpack and ES6 Modules. These pages were dynamically rendered using Javascript.
 
-### New Skills
+### New Skills / Knowledge
 - Javascript dynamic rendering
+- Modular Javascript
+- Module Bundling
+- NPM
 - Webpack
+- Transpilation
   
 #
 [See deployment here.](https://spuddister.github.io/restaurant-page-project/)
